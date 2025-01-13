@@ -22,6 +22,7 @@ body {
 
 main {
     width: 99%;
+    /*used with margin auto to align main content with margin on left-right */
     margin: auto;
 }
 
@@ -30,11 +31,12 @@ main {
     height: 100px;
     background-color: var(--banner-color);
     background-image: url("./assets/img/pattern.png");
-    background-size: 500px;
+    background-size: 400px;
 
 }
 
 #head-banner div {
+    /*move me to position the top-left logo*/
     position: relative;
     height: 100px;
     width: 300px;

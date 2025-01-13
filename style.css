@@ -166,3 +166,16 @@ main {
     left: 10px;
     color: var(--text-image-color);
 }
+
+footer {
+    height: 100px;
+    background-color: black;
+    text-align: center;
+}
+
+footer span {
+
+    position: relative;
+    left: 10px;
+    color: var(--sign-color);
+}

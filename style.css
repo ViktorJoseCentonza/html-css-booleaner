@@ -3,8 +3,8 @@
     /*colors used for the main logo on the banner*/
     --logo-shadow: black;
     /*colors used for the main logo on the banner*/
-    --author-color: grey;
-    /*color used for author and date*/
+    --unfocus-color: grey;
+    /*color used for subtext*/
     --sign-color: #61c2eb;
     /*color used for sign*/
     --banner-color: #4ea0ff;
@@ -79,8 +79,8 @@ main {
     margin-top: 20px;
 }
 
-.author {
-    color: var(--author-color);
+.unfocused {
+    color: var(--unfocus-color);
 }
 
 .sign {
@@ -89,7 +89,6 @@ main {
 
 .date {
     font-size: small;
-    color: var(--author-color);
     margin-bottom: 20px;
 }
 

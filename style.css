@@ -1,12 +1,34 @@
-body {
-    margin: 0px;
+:root {
+    --logo-color: white;
+    /*colors used for the main logo on the banner*/
+    --logo-shadow: black;
+    /*colors used for the main logo on the banner*/
+    --author-color: grey;
+    /*color used for author and date*/
+    --sign-color: aqua;
+    /*color used for sign*/
+    --banner-color: rgb(78, 160, 255);
+    --table-color: blue;
+    /*color used for table background*/
 }
 
+
+
+
+body {
+    margin: 0px;
+    margin: auto;
+}
+
+main {
+    width: 99%;
+    margin: auto;
+}
 
 #head-banner {
     position: relative;
     height: 100px;
-    background-color: rgb(78, 160, 255);
+    background-color: var(--banner-color);
     background-image: url("./assets/img/pattern.png");
     background-size: 500px;
 
@@ -22,7 +44,7 @@ body {
 
 .headtitle {
     color: white;
-    text-shadow: 0px 2px 3px rgb(0, 0, 0);
+    text-shadow: 0px 2px 3px var(--logo-shadow);
 
 }
 
@@ -44,15 +66,20 @@ body {
 
 .main-heading {
     font-size: 70px;
-
     margin: 0px;
     margin-top: 20px;
 }
 
 .author {
     font-size: 20px;
+    color: var(--author-color);
 }
 
 .sign {
-    color: aqua;
+    color: var(--sign-color);
+}
+
+.date {
+    font-size: small;
+    color: var(--author-color);
 }

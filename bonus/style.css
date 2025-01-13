@@ -1,0 +1,181 @@
+:root {
+    --logo-color: white;
+    /*colors used for the main logo on the banner*/
+    --logo-shadow: black;
+    /*colors used for the main logo on the banner*/
+    --unfocus-color: grey;
+    /*color used for subtext*/
+    --sign-color: #61c2eb;
+    /*color used for sign*/
+    --banner-color: #4ea0ff;
+    --table-head-background-color: #20a9e5;
+    /*color used for table header*/
+    --table-background-color: #b1e5f2;
+    /*color used for table background*/
+    --table-head-text-background-color: white;
+    /*color used for table header*/
+    --table-text-color: black;
+    /*color used for table background*/
+    --text-image-color: white;
+    /*color used for text over images*/
+}
+
+
+
+
+body {
+    margin: 0px;
+    margin: auto;
+    font-size: 20px;
+}
+
+main {
+    width: 80%;
+    /*used with margin auto to align main content with margin on left-right */
+    margin: auto;
+}
+
+#head-banner {
+    position: relative;
+    height: 100px;
+    background-color: var(--banner-color);
+    background-image: url("../assets/img/pattern.png");
+    background-size: 400px;
+
+}
+
+#head-banner div {
+    /*move me to position the top-left logo*/
+    position: relative;
+    height: 100px;
+    width: 300px;
+    left: 10%;
+    bottom: 10px;
+}
+
+.headtitle {
+    color: white;
+    text-shadow: 0px 2px 3px var(--logo-shadow);
+
+}
+
+.line1 {
+    font-size: x-large;
+    position: absolute;
+    bottom: 32px;
+    left: 30px;
+
+}
+
+.line2 {
+    font-size: 50px;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+
+.main-heading {
+    font-size: 70px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.unfocused {
+    color: var(--unfocus-color);
+}
+
+.sign {
+    color: var(--sign-color);
+}
+
+.date {
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.images-container img {
+    height: 600px;
+}
+
+.images-container div {
+    font-size: small;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#list-section ul {
+    position: relative;
+    right: 20px;
+}
+
+
+#loremtable {
+    border-collapse: collapse;
+}
+
+#loremtable th {
+    text-align: left;
+    background-color: var(--table-head-background-color);
+    color: var(--table-head-text-background-color);
+}
+
+#loremtable tr {
+    color: var(--table-text-color);
+
+}
+
+#loremtable tr:nth-child(odd) {
+    background-color: var(--table-background-color);
+
+}
+
+
+#loremtable td {
+    /*used to make the first 2 rows thinner*/
+    width: 25%;
+}
+
+#loremtable td.table-description {
+    /*used to make the last row larger*/
+    width: 50%;
+}
+
+#other-articles div {
+    padding-bottom: 20px;
+
+}
+
+#other-articles img {
+    padding-bottom: 20px;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    width: fit-content;
+    /*i think it would be better to make images fit a certain size instead of using their size*/
+}
+
+.image-container div {
+    position: absolute;
+    font-weight: bolder;
+    top: 10px;
+    left: 10px;
+    color: var(--text-image-color);
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+    text-align: center;
+}
+
+footer span {
+
+    position: relative;
+    left: 10px;
+    color: var(--sign-color);
+}

@@ -5,9 +5,9 @@
     /*colors used for the main logo on the banner*/
     --author-color: grey;
     /*color used for author and date*/
-    --sign-color: aqua;
+    --sign-color: #61c2eb;
     /*color used for sign*/
-    --banner-color: rgb(78, 160, 255);
+    --banner-color: #4ea0ff;
     --table-color: blue;
     /*color used for table background*/
 }
@@ -82,4 +82,13 @@ main {
 .date {
     font-size: small;
     color: var(--author-color);
+    margin-bottom: 20px;
+}
+
+.images-container img {
+    height: 600px;
+}
+
+.images-container div {
+    font-size: small;
 }

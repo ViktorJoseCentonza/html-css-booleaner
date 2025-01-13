@@ -8,7 +8,13 @@
     --sign-color: #61c2eb;
     /*color used for sign*/
     --banner-color: #4ea0ff;
-    --table-color: blue;
+    --table-head-background-color: #20a9e5;
+    /*color used for table header*/
+    --table-background-color: #b1e5f2;
+    /*color used for table background*/
+    --table-head-text-background-color: white;
+    /*color used for table header*/
+    --table-text-color: black;
     /*color used for table background*/
 }
 
@@ -97,4 +103,39 @@ main {
 
 .highlight {
     background-color: yellow;
+}
+
+#list-section ul {
+    position: relative;
+    right: 20px;
+}
+
+
+#loremtable {
+    border-collapse: collapse;
+}
+
+#loremtable th {
+    text-align: left;
+    background-color: var(--table-head-background-color);
+    color: var(--table-head-text-background-color);
+}
+
+#loremtable tr {
+    color: var(--table-text-color);
+
+}
+
+#loremtable tr:nth-child(odd) {
+    background-color: var(--table-background-color);
+
+}
+
+
+#loremtable td {
+    width: 25%;
+}
+
+#loremtable td.table-description {
+    width: 50%;
 }

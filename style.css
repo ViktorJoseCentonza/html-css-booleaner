@@ -16,6 +16,8 @@
     /*color used for table header*/
     --table-text-color: black;
     /*color used for table background*/
+    --text-image-color: white;
+    /*color used for text over images*/
 }
 
 
@@ -132,9 +134,35 @@ main {
 
 
 #loremtable td {
+    /*used to make the first 2 rows thinner*/
     width: 25%;
 }
 
 #loremtable td.table-description {
+    /*used to make the last row larger*/
     width: 50%;
+}
+
+#other-articles div {
+    padding-bottom: 20px;
+
+}
+
+#other-articles img {
+    padding-bottom: 20px;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    width: fit-content;
+    /*i think it would be better to make images fit a certain size instead of using their size*/
+}
+
+.image-container div {
+    position: absolute;
+    font-weight: bolder;
+    top: 10px;
+    left: 10px;
+    color: var(--text-image-color);
 }
